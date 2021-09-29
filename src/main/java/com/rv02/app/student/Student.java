@@ -23,19 +23,22 @@ public class Student {
             }
     )
     @Column(name = "id", updatable = false, nullable = false)
-    private final UUID studentId;
+    private UUID studentId;
 
     @Column
-    private final String firstName;
+    private String firstName;
 
     @Column
-    private final String lastName;
+    private String lastName;
 
     @Column
-    private final String email;
+    private String email;
 
     @Enumerated(EnumType.STRING)
-    private final Gender gender;
+    private Gender gender;
+
+    public Student() {
+    }
 
     public Student(UUID studentId, String firstName, String lastName, String email, Gender gender) {
         this.studentId = studentId;
