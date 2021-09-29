@@ -1,4 +1,4 @@
-package com.rv02.app;
+package com.rv02.app.student;
 
 enum Gender {
     MALE,
